@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de" manifest="webapp.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragebogen mit HTML, CSS & JavaScript erstellen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header> 
+        <h2>Fragen zu ein paar Programmiersprachen</h2>
+        <small>Programming languages questions</small>
+    </header>
+    
+    <section>
+
+        <article>
+
+            <h3>Beantworten Sie die Fragen in der richtigen Reihenfolge.</h3>
+
+            <div id="Frage1" class="fragebogen">
+                <p>1. Können Sie aktuell PHP?</p>
+            </div>
+    
+            <div id="Frage2" class="fragebogen">
+                <p>2. Glückwunsch! Lieben Sie PHP?</p>
+            </div>
+    
+            <div id="Frage3" class="fragebogen">
+                <p>3. Können Sie JavaScript?</p>
+            </div>
+    
+            <div id="Frage4" class="fragebogen">
+                <p>4. Super! Wir lieben PHP auch. Haben Sie heute schon PHP angewendet?</p>
+            </div>
+    
+            <div id="Frage5" class="fragebogen">
+                <p>5. Schade. Sind Sie damit zufrieden?</p>
+            </div>
+    
+            <div id="Frage6" class="fragebogen">
+                <p>6. Beherschen Sie SQL?</p>
+            </div>
+    
+            <div id="Frage7" class="fragebogen">
+                <p>7. Super! SQL und PHP verbinden. - Können Sie das?</p>
+            </div>
+                
+            <div id="Frage8" class="fragebogen">
+                <p>8. Sind Sie mit anderen Programmiersprachen vertraut?</p>
+            </div>
+                
+            <div id="Frage9" class="fragebogen">
+                <p>9. Sie haben alle Fragen beantwortet. Wollen Sie nun abschließen?</p>
+            </div>
+                
+            <div id="Frage10" class="fragebogen">
+                <p>10. Danke für Ihre Zeit!</p>
+            </div>
+    
+            <button class="button" id="ja" onclick="ausgewaehlteFrage('ja')" value="ja">Ja</button>
+    
+            <button class="button" id="nein" onclick="ausgewaehlteFrage('nein')" value="nein">Nein</button>
+    
+            <button class="button" id="neu" onclick="window.location='?'" value="nein">Neustarten</button>
+
+        </article>
+
+    </section>
+
+    <script src="js/fragebogen.js"></script>
+
+</body>
+</html>
